@@ -1,0 +1,155 @@
+
+
+/* Default css */
+*{
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  color: white;
+ 
+}
+
+body{
+  background: #152028;
+  color: white;
+ 
+}
+
+
+
+/* container  */
+
+.container{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* background Image */
+.backgroundImage{
+  position: relative;
+  background: url('./background.jpg') center center/cover;
+  width: 40%;
+  height: auto;
+  
+ 
+
+}
+
+/*  background image content  */
+.opa{
+filter: brightness(.8) contrast(1.2);
+position: absolute;
+width: 100%;
+height: 100%;
+background: rgba(36, 37, 42, 0.8);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white;
+
+}
+
+.opa h1{
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+
+/* Form  */
+
+.signup{
+  margin-left: 1rem;
+  width: 55%;
+  padding-top: 4rem;
+ 
+  
+}
+input {
+  display: block;
+  width: 80%;
+  padding: 0.5rem 0.3rem;
+  background: #152028;
+  
+}
+
+.formgroup {
+  margin-bottom: 1.5rem;
+}
+
+#btn {
+  
+  padding: 0.5rem 3rem;
+  color: white;
+  font-weight: bolder;
+  background: #2b2b2b;
+  border: none;
+  cursor: pointer;
+}
+
+.valid {
+  color: red;
+  margin-top: 0.3rem;
+  display: none;
+  max-width: 100%;
+}
+
+
+/* responsive */
+
+@media (max-width:560px){
+  .container{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .backgroundImage{
+    min-height: 400px;
+    width: 100%;
+  }
+
+  
+  .signup{
+    
+   margin-left: 0;
+  width: 95%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+text-align: center;
+   
+   
+    
+  }
+
+  input{
+    margin: auto;
+  }
+  .signup h1{
+    margin-bottom: 1rem;
+  }
+  
+
+  #btn{
+    padding: 0.5rem 2rem;
+    
+  }
+  .valid {
+    
+    max-width: 80%;
+    margin: auto;
+  }
+
+
+}
+
+
+@media (max-width:300px){
+.backgroundImage{
+  display: none;
+}
+
+}
